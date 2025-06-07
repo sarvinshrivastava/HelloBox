@@ -1,4 +1,3 @@
-```markdown
 # HelloBox
 
 This is a simple PHP contact form using PHPMailer for email delivery.
@@ -19,4 +18,3 @@ This is a simple PHP contact form using PHPMailer for email delivery.
 
 1. Edit the form fields in `index.php`.
 2. Submit the form to send an email via PHPMailer.
-```
