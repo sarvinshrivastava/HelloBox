@@ -8,11 +8,16 @@ This is a simple PHP contact form using PHPMailer for email delivery.
 - Sanitization
 - SMTP via Gmail
 
+## Pre Requirements
+
+1. Local server
+2. PHP compiler
+
 ## Setup
 
 1. Place this folder in `c:\xampp\htdocs\`.
 2. Add your Gmail credentials in '.env' file.
-3. Start Apache from the XAMPP control panel, then go to [http://localhost/php-project-contact_me-page](http://localhost/php-project_contact_me-page).
+3. Start Apache from the XAMPP control panel, then go to [http://localhost/php-project-contact_me-page](http://localhost/<name-of-your-sub-folder>).
 
 ## Usage
 
