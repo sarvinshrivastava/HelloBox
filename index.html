@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background-color: #007bff;
+        padding: 40px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .contact-form {
+        background-color: #fff;
+        border-radius: 29px;
+        max-width: 600px;
+        width: 100%;
+        padding: 28px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form h2 {
+        margin-bottom: 19px;
+        font-size: 28px;
+        font-weight: 650;
+      }
+
+      .form-group {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        flex: 1 1 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 29px;
+        font-size: 14px;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+
+      .form-group.half input {
+        flex: 1 1 calc(50% - 10px);
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .submit-btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        font-size: 18px;
+        border-radius: 29px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 100%;
+      }
+
+      .submit-btn:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 600px) {
+        .form-group.half input {
+          flex: 1 1 100%;
+        }
+
+        .contact-form h2 {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form class="contact-form" action="process_form.php" method="POST">
+      <h2>Send me a Message</h2>
+
+      <div class="form-group half">
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="form-group half">
+        <input type="text" name="phone" placeholder="Enter your phone" />
+        <input type="text" name="website" placeholder="Enter your website" />
+      </div>
+
+      <div class="form-group">
+        <textarea
+          name="message"
+          placeholder="Write your message"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </body>
+</html>

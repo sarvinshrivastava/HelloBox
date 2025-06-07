@@ -1,0 +1,7 @@
+```markdown
+<!-- filepath: c:\xampp\htdocs\php-project-contact_me-page\.gitignore -->
+/vendor/
+
+.env
+
+```
